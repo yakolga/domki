@@ -55,6 +55,21 @@ window.addEventListener("DOMContentLoaded", () => {
       logoImage.style.width = '100%';
     }
   }
+
+  let $root = $('html, body');
+  $('a[href^="#"]').click(function () {
+    let href = $.attr(this, 'href');
+    $root.animate({
+      scrollTop: $(href).offset().top
+    }, 500, function () {
+      window.location.hash = href;
+    });
+    return false;
+  });
+
+  lightGallery(document.querySelector('.gallery__gallery'));
+  lightGallery(document.querySelector('.gallery__gallery2'));
+  lightGallery(document.querySelector('.gallery__gallery3'));
 });
 
 
