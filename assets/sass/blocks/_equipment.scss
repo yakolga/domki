@@ -1,0 +1,47 @@
+.equipment {
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    margin-right: 20px;
+    width: 100%;
+  }
+  &__facility {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    span {
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 22px;
+      color: var(--grey-color);
+    }
+  }
+  &__facilities {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 769px) {
+    &__info {
+      flex-direction: column;
+    }
+    &__image {
+      margin-right: 0;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 426px) {
+    &__facilities {
+      margin-top: 20px;
+    }
+  }
+}

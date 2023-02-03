@@ -1,0 +1,30 @@
+.calltoaction {
+  padding: 50px 0;
+  background: rgba(162, 48, 126, 0.47);
+  margin-top: 60px;
+  &__title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 57px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-align: center;
+  }
+  &__button {
+    max-width: 310px;
+    margin: 0 auto;
+    margin-top: 11px;
+  }
+  @media (max-width: 700px) {
+    &__title {
+      font-size: 33px;
+      line-height: 43px;
+    }
+  }
+  @media (max-width: 426px) {
+    &__title {
+      font-size: 25px;
+      line-height: 33px;
+    }
+  }
+}
