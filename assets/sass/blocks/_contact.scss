@@ -14,7 +14,7 @@
     }
   }
   &__wrap {
-    width: 40%;
+    width: 45%;
   }
   &__element {
     display: flex;
@@ -30,6 +30,9 @@
   }
   &__title {
     text-align: left;
+  }
+  &__button {
+    max-width: 300px;
   }
   &__subtitle {
     text-align: left;

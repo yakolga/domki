@@ -94,6 +94,12 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase; 
   text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: var(--white-color);
+    filter: drop-shadow(6px 6px 21px rgba(162, 48, 126, 0.55));
+    transition: 0.2s all;
+  }
   @media (max-width: 426px) {
     font-size: 13px;
     line-height: 19px;
@@ -167,3 +173,5 @@ a {
 @import "blocks/cards.scss";
 @import "blocks/contact.scss";
 @import "blocks/regulamins.scss";
+@import "blocks/attraction.scss";
+@import "blocks/history.scss";
