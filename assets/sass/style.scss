@@ -156,6 +156,16 @@ a {
   }
 }
 
+input[type=checkbox] {
+  width: auto;
+  flex: 0 0 16px;
+  margin-right: 5px;
+}
+
+textarea {
+  resize: none;
+  min-height: 200px;
+}
 
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
@@ -175,3 +185,4 @@ a {
 @import "blocks/regulamins.scss";
 @import "blocks/attraction.scss";
 @import "blocks/history.scss";
+@import "blocks/overlay.scss";

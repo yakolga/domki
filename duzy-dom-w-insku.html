@@ -298,14 +298,18 @@
   <section class="contact">
     <div class="contact__container container">
       <div class="contact__wrapper">
-        <form action="#" class="forms__form contact__form" id="contactform1">
+        <form action="#" class="forms__form" id="contactformsmall">
           <input type="text" name="name" placeholder="Imię" class="forms__input">
           <input type="text" name="email" placeholder="Email" class="forms__input">
-          <input placeholder="Telefon" class="forms__input">
-          <textarea name="phone" placeholder="Wiadomość" class="forms__input"></textarea>
+          <input name="phone" placeholder="Telefon" class="forms__input">
+          <textarea name="message" placeholder="Wiadomość" class="forms__input"></textarea>
           <div class="forms__policy">
             <input name="privacypolicy" type="checkbox">
-            <span class="forms__conditions"></span>
+            <p class="forms__conditions">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach obsługi wysłanego
+              zapytania. Na podstawie tej zgody
+              będziemy mogli skontaktować się z Tobą za pośrednictwem np. telefonu czy poczty elektronicznej w celu obsługi
+              przez nas
+              twojego zapytania. Administratorem Twoich danych osobowych jest </p>
           </div>
           <button class="forms__button button">Wyślij</button>
         </form>
@@ -364,8 +368,22 @@
       </div>
     </div>
   </div>
+  <div class="overlay">
+    <div class="modal modal_mini" id="thanks">
+      <div class="modal__close">&times;</div>
+      <h2 class="modal__logo">
+        <img src="assets/img/logo.svg" alt="logo">
+      </h2>
+      <div class="modal__subtitle">Dziękujemy za pozostawienie danych osobowych</div>
+      <div class="modal__descr">Skontaktujemy się w ciągu 24h</div>
+    </div>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 <script src="assets/js/header.js"></script>
 <script src="assets/js/gallery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/form.js"></script>
 </body>
 </html>
