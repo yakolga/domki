@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener('touchstart', onTouchStart, { passive: true });
   const menu = document.querySelector(".header__ul"),
     menuItem = document.querySelectorAll(".header__li"),
     hamburger = document.querySelector(".hamburger");
