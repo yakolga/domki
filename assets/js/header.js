@@ -48,5 +48,3 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-document.addEventListener('touchstart', onTouchStart, { passive: true });
