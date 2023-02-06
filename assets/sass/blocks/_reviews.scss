@@ -13,6 +13,12 @@
     display: flex;
     margin-right: 15px;
   }
+  &__star {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
   &__info {
     display: flex;
     margin-bottom: 10px;

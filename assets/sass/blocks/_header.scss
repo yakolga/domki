@@ -12,6 +12,10 @@
   }
   &__logo {
     margin-bottom: 33px;
+    img {
+      width: 90px;
+      height: 85px;
+    }
   }
   &__ul {
     display: flex;

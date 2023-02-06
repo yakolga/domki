@@ -60,6 +60,10 @@
   }
   &__icon {
     margin-right: 7px;
+    img {
+      width: 28px; 
+      height: 28px;
+    }
   }
   &__number {
     font-weight: 500;
