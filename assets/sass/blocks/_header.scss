@@ -33,15 +33,33 @@
   &__hamburger {
     display: none;
   }
+  &__li {
+    &:after {
+      content: "";
+      width: 100%;
+      background-color: transparent;
+      height: 2px;
+      display: block;
+      transition: 0.2s all ease-in;
+      margin-top: 5px;
+    }
+    &:hover {
+      &:after {
+        background-color: var(--white-color);
+      }
+    }
+  }
   @media (max-width: 768px) {
     &__wrapper {
       align-items: unset;
     }
     &__logo {
       margin-bottom: 0;
-      width: 80px;
+      width: 50px;
+      height: 50px;
       img {
-        width: 80px;
+        width: 50px;
+        height: 50px;
       }
     }
     &__hamburger {

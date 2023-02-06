@@ -20,11 +20,11 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 #$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->IsHTML(true);
-$mail->Username = "biuro@seomood-za-efekt.pl"; 
-$mail->Password = "131313aA"; 
-$mail->setfrom('biuro@seomood-za-efekt.pl', 'Seomood za efekt');
-$mail->addaddress("olga.kulczycka07@gmail.com"); 
-$mail->Subject = "Wiadomość od potencjalnego klienta"; 
+$mail->Username = ""; 
+$mail->Password = ""; 
+$mail->setfrom('', 'Seomood za efekt');
+$mail->addaddress(""); 
+$mail->Subject = "Wiadomość od klienta"; 
 
 $mail->Body    = '
 		Uzytkownik zostawił dane <br>
