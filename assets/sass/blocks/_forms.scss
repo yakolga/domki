@@ -17,10 +17,11 @@
   &__conditions {
     font-size: 10px;
     text-align: justify;
+    color: var(--grey-color);
   }
   &__input {
     padding: 10px;
-    color: rgba(56, 56, 56, 0.4);
+    color: var(--grey-color);
     font-weight: 300;
     font-size: 15px;
     line-height: 25px;
