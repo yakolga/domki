@@ -22,6 +22,17 @@
   &__slide3 {
     background-image: url("../img/slide_3.webp");
   }
+  @media (max-width: 426px) {
+    &__slide1 {
+      background-image: url("../img/slider1_mobile.webp");
+    }
+    &__slide2 {
+      background-image: url("../img/slider2_mobile.webp");
+    }
+    &__slide3 {
+      background-image: url("../img/slider3_mobile.webp");
+    }
+  }
   &__bg {
     background: linear-gradient(180deg, rgba(27, 27, 27, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
     height: 97vh;
