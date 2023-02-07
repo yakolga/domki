@@ -22,12 +22,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.gstatic.com" crossorigin media="print" onload="this.media='all'">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" as="style" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/style.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
 </head>
 <body>
   <header class="header">
