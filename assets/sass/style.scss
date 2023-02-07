@@ -167,6 +167,24 @@ textarea {
   min-height: 200px;
 }
 
+.hover {
+  &:after {
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    height: 2px;
+    display: block;
+    transition: 0.2s all ease-in;
+    margin-top: 5px;
+  }
+
+  &:hover {
+    &:after {
+      background-color: var(--white-color);
+    }
+  }
+}
+
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
 @import "blocks/offer.scss";
