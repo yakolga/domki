@@ -28,13 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
       headerWrapper.style.padding = '10px 0 10px 0';
       header.style.backgroundColor = 'var(--main-color)';
       logo.style.marginBottom = '0';
-      logoImage.style.width = '60px';
+      logoImage.style.width = '50px';
+      logoImage.style.height = '50px';
     } else {
       headerWrapper.style.flexDirection = 'column';
       header.style.backgroundColor = 'transparent';
       headerWrapper.style.padding = '20px 0 20px 0';
       logo.style.marginBottom = '30px';
-      logoImage.style.width = '100%';
+      logoImage.style.width = '90px';
+      logoImage.style.height = '85px';
     }
   }
 

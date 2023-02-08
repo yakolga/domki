@@ -3,11 +3,12 @@
   padding: 24px;
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   &__element {
     display: flex;
     align-items: center;
+    margin: 0 20px;
   }
   &__icon {
     margin-right: 15px;

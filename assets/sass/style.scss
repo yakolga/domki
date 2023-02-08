@@ -34,12 +34,22 @@ a {
   top: 50%;
   left: 4%;
   transform: translate(-50%, -50%);
+  img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .slick-next {
   top: 50%;
   right: 1%;
   transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .slick-dots {
@@ -75,21 +85,21 @@ a {
 
 /* Colors */
 :root {
-  --main-color: #900C3F;
+  --main-color: #89023E;
   --grey-color: #2F2F2F;
   --white-color: #FFFFFF;
 }
 
 .button {
   background-color: var(--main-color);
-  padding: 15px 20px;
-  min-width: 220px;
+  padding: 10px 19px;
+  min-width: 158px;
   display: flex;
   justify-content: center; 
   align-items: center;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   color: var(--white-color);
   letter-spacing: 0.08em;
   text-transform: uppercase; 
@@ -97,7 +107,7 @@ a {
   cursor: pointer;
   &:hover {
     color: var(--white-color);
-    filter: drop-shadow(6px 6px 21px rgba(162, 48, 126, 0.55));
+    filter: drop-shadow(6px 6px 21px rgba(137, 2, 62, 0.40));
     transition: 0.2s all;
   }
   @media (max-width: 426px) {
@@ -107,8 +117,8 @@ a {
 }
 
 .titles {
-  padding-top: 70px;
-  margin-bottom: 40px;
+  padding-top: 35px;
+  margin-bottom: 30px;
   &__title {
     font-weight: 700;
     font-size: 30px;
@@ -126,8 +136,8 @@ a {
     text-transform: uppercase;
   }
   @media (max-width: 426px) {
-    padding-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 15px;
     &__title {
       font-size: 20px;
       line-height: 30px;

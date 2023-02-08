@@ -45,6 +45,7 @@ $('form').submit(function (e) {
     data: $(this).serialize()
   }).done(function () {
     $(this).find("input").val("");
+    $(this).find(":radio").prop("disabled", true);
     $('.overlay, #thanks').fadeIn('slow');
     $('form').trigger('reset');
   });
@@ -55,5 +56,13 @@ $('form').submit(function (e) {
 (function ($) {
   $('.modal__close').on('click', function () {
     $('.overlay, #thanks').fadeOut('slow');
+    $('body').css('overflow', "scroll");
+  });
+})(jQuery);
+
+(function ($) {
+  $('.overlay').on('click', function () {
+    $('.overlay, #thanks').fadeOut('slow');
+    $('body').css('overflow', "scroll");
   });
 })(jQuery);

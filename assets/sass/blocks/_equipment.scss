@@ -58,5 +58,15 @@
     &__facilities {
       margin-top: 20px;
     }
+    &__facility {
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
   }
 }

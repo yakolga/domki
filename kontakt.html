@@ -78,12 +78,31 @@
           <input type="text" name="name" placeholder="Imię" class="forms__input">
           <input type="text" name="email" placeholder="Email" class="forms__input">
           <input name="phone" placeholder="Telefon" class="forms__input">
+          <fieldset class="contact__radio">
+            <legend>Masz pytanie dotyczące:</legend>
+            <div class="contact__choice">
+              <div class="contact__elem">
+                <input type="radio" id="huey" name="pytanie" value="huey" checked>
+                <label for="huey">Dużego domu</label>
+              </div>
+              <div class="contact__elem">
+                <input type="radio" id="dewey" name="pytanie" value="dewey">
+                <label for="dewey">Małego domu</label>
+              </div>
+              <div class="contact__elem">
+                <input type="radio" id="louie" name="pytanie" value="louie">
+                <label for="louie">Inne</label>
+              </div>
+            </div>
+          </fieldset>
           <textarea name="message" placeholder="Wiadomość" class="forms__input"></textarea>
           <fieldset class="forms__policy">
             <input name="privacypolicy" id="privacypolicy1" type="checkbox">
-            <label for="privacypolicy1" class="forms__conditions">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach
+            <label for="privacypolicy1" class="forms__conditions">Wyrażam zgodę na przetwarzanie moich danych osobowych w
+              celach
               obsługi wysłanego zapytania. Na podstawie tej zgody
-              będziemy mogli skontaktować się z Tobą za pośrednictwem np. telefonu czy poczty elektronicznej w celu obsługi przez
+              będziemy mogli skontaktować się z Tobą za pośrednictwem np. telefonu czy poczty elektronicznej w celu
+              obsługi przez
               nas
               twojego zapytania. Administratorem Twoich danych osobowych jest</label>
           </fieldset>
@@ -95,12 +114,6 @@
             <h3 class="contact__subtitle titles__subtitle">Skontaktuj się z nami</h3>
           </div>
           <div class="contact__info">
-            <div class="contact__element">
-              <div class="contact__icon">
-                <img src="assets/icons/location.svg" alt="adres">
-              </div>
-              <span class="contact__text text">ul. Lipowa 7, 73-140 Ińsko, Polska</span>
-            </div>
             <div class="contact__element">
               <div class="contact__icon">
                 <img src="assets/icons/phone.svg" alt="numer telefonu">

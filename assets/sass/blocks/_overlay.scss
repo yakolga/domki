@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   background-color: rgba(0, 0, 0, 0.56);
   z-index: 1000;
@@ -17,7 +17,13 @@
   min-height: 350px;
   background-color: var(--main-color);
   padding: 38px 40px 40px 40px;
-
+  &__order {
+    background-color: var(--white-color);
+    div {
+      color: var(--main-color);
+      margin-bottom: 12px;
+    }
+  }
   &__close {
     position: absolute;
     top: 10px;

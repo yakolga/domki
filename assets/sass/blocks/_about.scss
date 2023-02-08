@@ -4,6 +4,9 @@
     align-items: center;
     margin-bottom: 43px;
     justify-content: space-between;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__info {
     width: 39%;
