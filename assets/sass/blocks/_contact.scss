@@ -37,6 +37,9 @@
   }
   &__button {
     max-width: 300px;
+    &:last-child {
+      margin-top: 20px;
+    }
   }
   &__subtitle {
     text-align: left;
