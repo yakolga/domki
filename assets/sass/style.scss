@@ -56,11 +56,11 @@ a {
   position: absolute;
   bottom: 0;
   display: flex;
-  right: 42%;
+  right: 43%;
   bottom: 2%;
   button {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border: none;
     border-radius: 50%;
     margin-right: 5px;
@@ -68,6 +68,9 @@ a {
     background: rgba(244, 243, 243, 0.46);
     color: var(--main-color);
     font-size: 0;
+  }
+  @media (max-width: 375px) {
+    right: 36%;
   }
 }
 
