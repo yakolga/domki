@@ -35,8 +35,8 @@ window.addEventListener("DOMContentLoaded", () => {
       header.style.backgroundColor = 'transparent';
       headerWrapper.style.padding = '20px 0 20px 0';
       logo.style.marginBottom = '30px';
-      logoImage.style.width = '90px';
-      logoImage.style.height = '85px';
+      logoImage.style.width = '80px';
+      logoImage.style.height = '75px';
     }
   }
 
