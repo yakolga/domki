@@ -21,3 +21,11 @@ lightGallery(document.getElementById('open-website5'), {
 lightGallery(document.getElementById('open-website6'), {
   selector: 'this',
 });
+
+lightGallery(document.getElementById('open-website7'), {
+  selector: 'this',
+});
+
+lightGallery(document.getElementById('open-website8'), {
+  selector: 'this',
+});
