@@ -14,6 +14,9 @@
     justify-content: center;
     align-items: center;
   }
+  &__wrap {
+    display: flex;
+  }
   &__ul {
     display: flex;
     margin-bottom: 30px;
@@ -39,6 +42,17 @@
     }
     &__li {
       margin-bottom: 13px;
+    }
+  }
+  @media (max-width: 550px) {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__li {
+      text-align: center;
+    }
+    &__ul {
+      flex-direction: row;
     }
   }
   @media (max-width: 425px) {

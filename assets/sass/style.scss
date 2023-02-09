@@ -195,6 +195,12 @@ textarea {
   }
 }
 
+@media (max-width: 426px) {
+  .lg-outer .lg-video {
+    height: 80vh;
+  }
+}
+
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
 @import "blocks/offer.scss";

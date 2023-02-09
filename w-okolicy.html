@@ -27,9 +27,9 @@
   <link rel="preload" as="style" href="https://fonts.gstatic.com" crossorigin media="print" onload="this.media='all'">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" as="style" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/css/style.min.css">
   <link rel="stylesheet" media="print" onload="this.media='all'"
     href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
   <header class="header">
@@ -64,9 +64,11 @@
         <div class="main__wrapper">
           <h1 class="main__heading">W okolicy</h1>
           <div class="main__buttons">
-            <a href="http://roomadmin.pl/application/calendar/index?fh=f6a250dc036bfc2356f6e670b20d5bb2950a987f"
+            <a data-iframe="true" id="open-website1"
+              data-src="http://roomadmin.pl/application/calendar/index?fh=f6a250dc036bfc2356f6e670b20d5bb2950a987f"
               class="main__button button">Zarezerwuj duży dom</a>
-            <a href="http://roomadmin.pl/application/calendar/index?fh=1cf78eb42189d81bc8a8fed0ba527a0ccf9bf4f1"
+            <a data-iframe="true" id="open-website2"
+              data-src="http://roomadmin.pl/application/calendar/index?fh=1cf78eb42189d81bc8a8fed0ba527a0ccf9bf4f1"
               class="main__button button">Zarezerwuj mały dom</a>
           </div>
         </div>
@@ -222,7 +224,7 @@
             <legend>Masz pytanie dotyczące:</legend>
             <div class="contact__choice">
               <div class="contact__elem">
-                <input type="radio" id="huey" name="pytanie" value="huey" checked>
+                <input type="radio" id="huey" name="pytanie" value="huey">
                 <label for="huey">Dużego domu</label>
               </div>
               <div class="contact__elem">
@@ -267,10 +269,12 @@
               <a class="contact__text text" href="mailto:rezerwacje@insko.com.pl">rezerwacje@insko.com.pl</a>
             </div>
             <span class="contact__or">LUB</span>
-            <a href="http://roomadmin.pl/application/calendar/index?fh=f6a250dc036bfc2356f6e670b20d5bb2950a987f"
-              class="contact__button button">Zarezerwuj duży dom</a>
-            <a href="http://roomadmin.pl/application/calendar/index?fh=1cf78eb42189d81bc8a8fed0ba527a0ccf9bf4f1"
-              class="contact__button button">Zarezerwuj mały dom</a>
+            <a data-iframe="true" id="open-website5"
+              data-src="http://roomadmin.pl/application/calendar/index?fh=f6a250dc036bfc2356f6e670b20d5bb2950a987f"
+              class="contact__button button open-website">Zarezerwuj duży dom</a>
+            <a data-iframe="true" id="open-website6"
+              data-src="http://roomadmin.pl/application/calendar/index?fh=1cf78eb42189d81bc8a8fed0ba527a0ccf9bf4f1"
+              class="contact__button button open-website">Zarezerwuj mały dom</a>
           </div>
         </div>
       </div>
@@ -284,14 +288,18 @@
         </a>
         <nav class="footer__nav">
           <ul class="footer__ul">
-            <li class="footer__li hover"><a href="index.html" class="footer__link">Główna</a></li>
-            <li class="footer__li hover"><a href="index.html#onas" class="footer__link">O nas</a></li>
-            <li class="footer__li hover"><a href="index.html#oferta" class="footer__link">Oferta</a></li>
-            <li class="footer__li hover"><a href="duzy-dom-w-insku.html" class="footer__link">Duży dom</a></li>
-            <li class="footer__li hover"><a href="maly-dom-w-insku.html" class="footer__link">Mały dom</a></li>
-            <li class="footer__li hover"><a href="w-okolicy.html" class="footer__link">W okolicy</a></li>
-            <li class="footer__li hover"><a href="kontakt.html" class="footer__link">Kontakt</a></li>
-            <li class="footer__li hover"><a href="regulaminy.html" class="footer__link">Regulaminy</a></li>
+            <div class="footer__wrap">
+              <li class="footer__li hover"><a href="index.html" class="footer__link">Główna</a></li>
+              <li class="footer__li hover"><a href="index.html#onas" class="footer__link">O nas</a></li>
+              <li class="footer__li hover"><a href="index.html#oferta" class="footer__link">Oferta</a></li>
+              <li class="footer__li hover"><a href="duzy-dom-w-insku.html" class="footer__link">Duży dom</a></li>
+            </div>
+            <div class="footer__wrap">
+              <li class="footer__li hover"><a href="maly-dom-w-insku.html" class="footer__link">Mały dom</a></li>
+              <li class="footer__li hover"><a href="w-okolicy.html" class="footer__link">W okolicy</a></li>
+              <li class="footer__li hover"><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+              <li class="footer__li hover"><a href="regulaminy.html" class="footer__link">Regulaminy</a></li>
+            </div>
           </ul>
         </nav>
         <span class="footer__copyright">Copyright 2023</span>
@@ -306,5 +314,6 @@
   <script src="assets/js/jquery.maskedinput.min.js"></script>
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="assets/js/form.js"></script>
+  <script src="assets/js/iframe.js"></script>
   </body>
   </html>
