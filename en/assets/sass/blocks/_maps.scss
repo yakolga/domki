@@ -1,0 +1,24 @@
+.maps {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__map {
+    width: 48%;
+  }
+  @media (max-width: 769px) {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__map {
+      width: 100%;
+    }
+    iframe {
+      height: 500px;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+}

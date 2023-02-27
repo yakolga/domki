@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" href="kontakt.html" hreflang="pl">
+  <link rel="alternate" href="en/kontakt.html" hreflang="en">
   <title>Domki Insko</title>
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
@@ -40,10 +42,19 @@
           <img src="assets/img/logo.svg" alt="logo" class="header__image">
         </a>
         <nav class="header__nav">
-          <ul class="header__ul">
+          <ul class="header__ul menu__list">
             <li class="header__li hover"><a href="index.html" class="header__link">Główna</a></li>
             <li class="header__li hover"><a href="index.html#onas" class="header__link">O nas</a></li>
             <li class="header__li hover"><a href="index.html#oferta" class="header__link">Oferta</a></li>
+            <li class="header__li hover">
+              <a href="#" class="header__link">Oferty specjalne</a>
+              <span class="menu__arrow arrow"></span>
+              <ul class="header__menu-list sub-menu__list">
+                <li class="header__element">
+                  <a class="header__menu-link sub-menu__link" href="ortodonta-szczecin.html">Boże ciało w Ińsku</a>
+                </li>
+              </ul>
+            </li>
             <li class="header__li hover"><a href="duzy-dom-w-insku.html" class="header__link">Duży dom</a></li>
             <li class="header__li hover"><a href="maly-dom-w-insku.html" class="header__link">Domek Letniskowy</a></li>
             <li class="header__li hover"><a href="w-okolicy.html" class="header__link">W okolicy</a></li>
@@ -56,6 +67,9 @@
           <span></span>
           <span></span>
         </div>
+      </div>
+      <div class="language">
+        <a href="en/kontakt.html" class="language__english">EN</a>
       </div>
     </div>
   </header>
@@ -173,6 +187,7 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script src="assets/js/menu.js"></script>
   <script src="assets/js/header.js"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.maskedinput.min.js"></script>

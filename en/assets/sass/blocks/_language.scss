@@ -1,0 +1,15 @@
+.language {
+  position: absolute;
+  right: 5%;
+  top: 25px;
+  &__english {
+    color: var(--white-color);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 890px) {
+    right: 80px;
+    top: 45px;
+  }
+}

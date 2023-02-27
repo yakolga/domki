@@ -1,0 +1,46 @@
+.main {
+  background-image: url("../img/duzydomwinsku.webp");
+  background-position: center;
+  background-image: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  &__bg {
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0.6) -10.19%, rgba(0, 0, 0, 0) 89.81%);
+    height: 80vh;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__heading {
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 75px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 730px;
+    margin-bottom: 40px;
+  }
+  &__button {
+    margin: 10px;
+  }
+  @media (max-width: 600px) {
+    &__buttons {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 426px) {
+    &__heading {
+      font-size: 38px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
+  }
+}
