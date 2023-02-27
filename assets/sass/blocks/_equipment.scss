@@ -3,6 +3,16 @@
     display: flex;
     align-items: center;
   }
+  &__images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    div {
+      width: 45%;
+      margin-right: 0;
+      margin: 15px;
+    }
+  }
   &__image {
     margin-right: 20px;
     width: 50%;

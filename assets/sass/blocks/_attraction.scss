@@ -2,6 +2,7 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   &__element {
     background-color: var(--main-color);
